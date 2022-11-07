@@ -10,10 +10,12 @@
     height: 40px;
     color: #909090;
     background-color: #202020;
-    @include center()
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 .accimg {
-    margin-left: 990px;
+    margin-left: 1100px;
     margin-right: 10px;
 }
 .nav {
@@ -29,7 +31,7 @@
 .signup {
     position: absolute;
     top: 0;
-    left: 1180px;
+    left: 1100px;
     width: 200px;
     display: none;
     border: 3px solid #202020;
@@ -56,6 +58,10 @@ ul {
 }
 ul li {
     margin-left: 40px;
+}
+.nav li:hover {
+    color: #909090;
+    cursor: pointer;
 }
 .firstsection {
     width: 1366px;
@@ -96,4 +102,51 @@ ul li {
     width: 154px;
     height: 48px;
     background-color: #ffeb00;
+}
+.search-box {
+    width: 40px;
+    height: 40px;
+    background-color: #ebebeb;
+    position: relative;
+    margin-left: 35px;
+    transition: 1s;
+    overflow: hidden;
+}
+.search-btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 22px;
+    cursor: pointer;
+}
+.search-box.active {
+    width: 256px;
+}
+.search-box .input {
+    position: relative;
+    width: 250px;
+    height: 40px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-box .input input {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    background-color: #ebebeb;
+}
+.section2{
+    width: 1366px;
+    height: 664px;
+}
+.slider {
+    width: 1084px;
+    height: 487px;
 }
