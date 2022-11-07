@@ -1,0 +1,34 @@
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.acc {
+    width: 100vw;
+    height: 40px;
+    color: #909090;
+    background-color: #202020;
+    @include center()
+}
+.accimg {
+    margin-left: 990px;
+    margin-right: 10px;
+}
+.nav {
+    width: 100vw;
+    height: 160px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+ul {
+    margin-left: 280px;
+    @include center()
+}
+.nav h1 {
+    font-size: 48px;
+    margin-left: 140px;
+}
+ul li {
+    margin-left: 40px;
+}
