@@ -4,7 +4,9 @@
     align-items: center;
 }
 .acc {
-    width: 100vw;
+    width: 1366px;
+    width: 100%;
+    margin: 0 auto;
     height: 40px;
     color: #909090;
     background-color: #202020;
@@ -15,11 +17,34 @@
     margin-right: 10px;
 }
 .nav {
-    width: 100vw;
+    width: 1366px;
+    width: 100%;
+    margin: 0 auto;
     height: 160px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
+}
+.signup {
+    position: absolute;
+    top: 0;
+    left: 1180px;
+    width: 200px;
+    display: none;
+    border: 3px solid #202020;
+    height: 120px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #202020;
+}
+.signup input {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.signup button {
+    margin-top: 15px;
+    margin-left: 115px;
 }
 ul {
     margin-left: 280px;
@@ -31,4 +56,44 @@ ul {
 }
 ul li {
     margin-left: 40px;
+}
+.firstsection {
+    width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    height: 640px;
+    background-image: url(../photos/WKND-image.png);
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.advntures {
+    width: 1160px;
+    height: 246px;
+    background-color: #ffffff;
+    margin-bottom: 0px;
+}
+.advntures h1 {
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: 22px;
+}
+.advntures p {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 100px;
+    margin-top: 15px;
+}
+.advntures button {
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 154px;
+    height: 48px;
+    background-color: #ffeb00;
 }
