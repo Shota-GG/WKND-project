@@ -68,7 +68,7 @@ ul li {
     width: 100%;
     margin: 0 auto;
     height: 640px;
-    background-image: url(../photos/WKND-image.png);
+    background-image: url(../photos/WKND-images.png);
     background-position: center;
     background-size: cover;
     overflow: auto;
@@ -145,8 +145,56 @@ ul li {
 .section2{
     width: 1366px;
     height: 664px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .slider {
     width: 1084px;
     height: 487px;
+}
+.section3 {
+    width: 1366px;
+    height: 441px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //border-bottom: 1px solid #202020;
+}
+.recent {
+   font-size: 36px; 
+   margin-left: 141px;
+}
+.sliders div {
+    width: 256px;
+    height: 240px;
+}
+.sliders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 65px;
+    
+}
+.section4 {
+        width: 1366px;
+        width: 100%;
+        margin: 0 auto;
+        height: 640px;
+        background-image: url(../photos/WKND-image.png);
+        background-position: center;
+        background-size: cover;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+}
+.where {
+    font-size: 24px; 
+    margin-left: 141px;
+    margin-top: 71px;
+    margin-bottom: 50px;
 }
