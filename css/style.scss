@@ -49,7 +49,7 @@
     margin-top: 15px;
     margin-left: 115px;
 }
-ul {
+.nav ul {
     margin-left: 280px;
     @include center()
 }
@@ -57,7 +57,7 @@ ul {
     font-size: 48px;
     margin-left: 140px;
 }
-ul li {
+.nav ul li {
     margin-left: 40px;
 }
 .nav li:hover {
@@ -152,8 +152,38 @@ ul li {
     align-items: center;
     margin: 0 auto;
 }
+.article {
+    width: 368px;
+    height: 487px;
+    background-color: #f7f7f7;
+}
+.article h1 {
+    font-size: 36px;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+.article h4 {
+    font-size: 24px;
+    margin-top: 37px;
+    margin-left: 20px;
+}
+.article p {
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 328px;
+    line-height: 30px;
+}
+.article button {
+    width: 155px;
+    height: 48px;
+    background-color: #ffeb00;
+    margin-top: 123px;
+    margin-left: 20px;
+}
+
 .slider {
-    width: 1084px;
+    width: 716px;
     height: 487px;
 }
 .section3 {
@@ -187,7 +217,7 @@ ul li {
         width: 100%;
         margin: 0 auto;
         height: 640px;
-        background-image: url(../photos/WKND-image.png);
+        background-image: url(../photos/WKND-imagee.png);
         background-position: center;
         background-size: cover;
         overflow: auto;
@@ -239,6 +269,11 @@ ul li {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 61px;
+    //@include center()
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 .expbtn {
     width: 166px;
@@ -248,9 +283,85 @@ ul li {
     margin-left: 141px;
     margin-top: 60px;
 }
-.section5 div {
+.section5 h3 {
+    font-size: 16px;
+    margin-top: 12px;
+}
+.section5 p {
+    font-size: 10px;
+    margin-top: 11px;
+}
+.section6 {
+    width: 1084px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 136px;
+    margin-bottom: 72px;
+    @include center()
+}
+.section6 div h1 {
+    font-size: 40px;
+    margin-top: 22px;
+    margin-left: 40px;
+}
+.section6 div p {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+.section6 div input {
+    width: 236px;
+    height: 48px;
+    background-color: #ebebeb;
+    margin-top: 24px;
+    margin-left: 40px;
+}
+.section6 div button {
+    width: 133px;
+    height: 48px;
+    background-color: #202020;
+    color: #ffffff;
+    margin-left: 20px;
+}
+.section6 div {
+    height: 204px;
+    background-color: #f7f7f7;
+}
+footer {
+    padding: 56px;
+    width: 100%;
+    // height: 234px;
+    margin: 0 auto;
+    background-color: #202020;
+}
+.icons{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
+    // width: 1000px;
+    margin: 0 auto;
+   
+}
+.icons h1 {
+    color: #ebebeb;
+    font-size: 80px;
+}
+.icons li {
+    color: #909090;
+    font-size: 14px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.icons ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icons li:hover {
+    color: #ffffff;
+}
+footer p {
+    color: #909090;
+    margin-left: 200px;
+    margin-top: 70px;
 }

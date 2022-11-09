@@ -8,7 +8,13 @@ let climbing = document.querySelector(".climbing")
 let img2 = document.querySelector(".img2")
 let img3 = document.querySelector(".img3")
 let img4 = document.querySelector(".img4")
+let climbingp = document.querySelector(".climb p") 
 
+let images = document.querySelectorAll(".section5 div")
+
+function scrollWin(){
+        window.scrollBy(0, 2000)
+}
 
 account.addEventListener("click", function(){
         signup.style.display = "block"
@@ -20,44 +26,17 @@ search.onclick = function(){
     document.querySelector(".search-box").classList.toggle("active")
 }
 
-img1.addEventListener("mouseover", mouseOver)
-img1.addEventListener("mouseout", mouseOut)
-function mouseOver(){
-        section4.style.backgroundImage = "url(../photos/WKND-teaser1.1.png)"
-        climbing.innerHTML = "Whistler Mountain"
-}
-function mouseOut(){
-        section4.style.backgroundImage = "url(../photos/WKND-image.png)"
-        climbing.innerHTML = "Climbing New Zealand"
+for(let i = 0; i < images.length; i ++){
+        images[i].addEventListener("mouseover", function(){
+                section4.style.backgroundImage = `url(${images[i].firstElementChild.src})`
+                climbing.innerHTML = images[i].children[1].innerHTML
+                climbingp.innerHTML = images[i].children[2].innerHTML
+                console.log(images[i].children[1].innerHTML);
+        })
+        images[i].addEventListener("mouseout", function(){
+                section4.style.backgroundImage = "url(../photos/WKND-imagee.png)"
+                climbing.innerHTML = "Climbing New Zealand"
+                climbingp.innerHTML = "Let us help you make your New Zealand climbing vacation a memory you will cherish forever! Come join us for a guided rock climbing adventure in the mountains that trained Sir Edmund Hilary."
+        })
 }
 
-img2.addEventListener("mouseover", mouseOver)
-img2.addEventListener("mouseout", mouseOut)
-function mouseOver(){
-        section4.style.backgroundImage = "url(../photos/WKND-teaser1.2.png)"
-        climbing.innerHTML = "Surf Camp In COSTA RICA"
-}
-function mouseOut(){
-        section4.style.backgroundImage = "url(../photos/WKND-image.png)"
-        climbing.innerHTML = "Climbing New Zealand"
-}
-img3.addEventListener("mouseover", mouseOver)
-img3.addEventListener("mouseout", mouseOut)
-function mouseOver(){
-        section4.style.backgroundImage = "url(../photos/WKND-teaser1.3.png)"
-        climbing.innerHTML = "Ski Touring MONT BLANC"
-}
-function mouseOut(){
-        section4.style.backgroundImage = "url(../photos/WKND-image.png)"
-        climbing.innerHTML = "Climbing New Zealand"
-}
-img4.addEventListener("mouseover", mouseOver)
-img4.addEventListener("mouseout", mouseOut)
-function mouseOver(){
-        section4.style.backgroundImage = "url(../photos/WKND-teaser1.4.png)"
-        climbing.innerHTML = "Riverside Camping"
-}
-function mouseOut(){
-        section4.style.backgroundImage = "url(../photos/WKND-image.png)"
-        climbing.innerHTML = "Climbing New Zealand"
-}
