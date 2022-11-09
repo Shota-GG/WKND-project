@@ -9,8 +9,9 @@ let img2 = document.querySelector(".img2")
 let img3 = document.querySelector(".img3")
 let img4 = document.querySelector(".img4")
 let climbingp = document.querySelector(".climb p") 
-
 let images = document.querySelectorAll(".section5 div")
+let email = document.querySelector(".email")
+let emailBtn = document.querySelector(".emailbtn")
 
 function scrollWin(){
         window.scrollBy(0, 2000)
@@ -40,3 +41,15 @@ for(let i = 0; i < images.length; i ++){
         })
 }
 
+emailBtn.addEventListener("click", function(){
+        
+      let mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+      if(email.value.match(mailformat)){
+        alert("you're signed up")
+      }
+      else{
+        alert("Invalid email address.");
+      }
+      email.value = ""
+})
+console.log(email.value);
