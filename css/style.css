@@ -62,8 +62,17 @@ a {
   box-sizing:  border-box;
 }
 
+.container {
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+}
+
 .acc {
-  width: 1366px;
   width: 100%;
   margin: 0 auto;
   height: 40px;
@@ -135,7 +144,6 @@ a {
 }
 
 .firstsection {
-  width: 1366px;
   width: 100%;
   margin: 0 auto;
   height: 640px;
@@ -150,7 +158,7 @@ a {
 }
 
 .advntures {
-  width: 1160px;
+  width: 90%;
   height: 246px;
   background-color: #ffffff;
   margin-bottom: 0px;
@@ -223,8 +231,7 @@ a {
 }
 
 .section2 {
-  width: 1366px;
-  width: 100%;
+  width: 80%;
   height: 664px;
   display: flex;
   justify-content: center;
@@ -272,7 +279,7 @@ a {
 }
 
 .section3 {
-  width: 1366px;
+  width: 80%;
   height: 441px;
   width: 100%;
   display: flex;
@@ -301,7 +308,6 @@ a {
 }
 
 .section4 {
-  width: 1366px;
   width: 100%;
   margin: 0 auto;
   height: 640px;
@@ -316,7 +322,7 @@ a {
 }
 
 .climb {
-  width: 1160px;
+  width: 90%;
   height: 246px;
   background-color: #ffffff;
   margin-bottom: 0px;
@@ -359,13 +365,13 @@ a {
 }
 
 .section5 {
-  width: 1366px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 61px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -389,14 +395,14 @@ a {
 }
 
 .section6 {
-  width: 1084px;
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
   margin-top: 136px;
   margin-bottom: 72px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .section6 div h1 {
@@ -428,7 +434,6 @@ a {
 }
 
 .section6 div {
-  height: 204px;
   background-color: #f7f7f7;
 }
 
@@ -443,6 +448,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 
@@ -472,4 +478,66 @@ footer p {
   color: #909090;
   margin-left: 200px;
   margin-top: 70px;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .acc {
+    justify-content: flex-start;
+  }
+  .nav ul {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .accimg {
+    margin-left: 50px;
+  }
+  .signup {
+    left: 228px;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search-box {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .nav h1 {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .slider {
+    display: none;
+  }
+  .section3 {
+    display: none;
+  }
+  .recent {
+    display: none;
+  }
+  .climb p {
+    display: none;
+  }
+  footer nav {
+    display: none;
+  }
+  .nextadv {
+    margin-left: 110px;
+  }
+  .where {
+    margin-left: 100px;
+  }
+  .section6 div button {
+    margin-top: 5px;
+    margin-left: 90px;
+  }
+  footer p {
+    margin-left: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
